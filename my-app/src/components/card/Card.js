@@ -48,7 +48,7 @@ export default class card extends Component {
 
   change(e) {
     this.setState({
-      value: e.target.value
+      value: e.target.value;
     });
   }
 
