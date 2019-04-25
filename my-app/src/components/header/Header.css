@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+.h1,
+.h2 {
+  background: #f0f3f6;
+  padding: 7px;
+}
+
+.travel {
+  margin-top: 10px;
+  color: #365bc2;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.o-icon {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.brand-wrap {
+  width: 100%;
+}
