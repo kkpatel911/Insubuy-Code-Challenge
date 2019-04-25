@@ -1,0 +1,45 @@
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.resettag {
+  text-align: center;
+}
+
+.resettag {
+  grid-column: 2/3;
+  font: inherit;
+  color: #406a95;
+  font-size: 1rem;
+  cursor: pointer;
+  font-style: italic;
+  margin: 0.5rem auto;
+}
+
+.button_getquote {
+  grid-column: 1/4;
+  background: #ed8029;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+}
+.button_getquote:hover {
+  background: #e68d44;
+}
+
+@media (max-width: 650px) {
+  .button_getquote {
+    grid-column: 2/3;
+  }
+
+  .button_getquote {
+    font-size: 1em;
+  }
+}
