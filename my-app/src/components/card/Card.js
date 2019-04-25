@@ -25,9 +25,14 @@ export default class card extends Component {
 
   renderList() {
     var filterdata = this.state.data.sort((a, b) => {
-      return this.state.value === "Sort by Name"
-        ? a.price - b.price
-        : b.price - a.price;
+      switch (this.state.value) {
+        case "Sort By Low To High":
+          return a.price - b.price;
+        case "Sort By High To Low":
+          return b.price - a.price;
+        default:
+          return "Kishan";
+      }
     });
     return filterdata.map(el => {
       return (
@@ -48,7 +53,7 @@ export default class card extends Component {
 
   change(e) {
     this.setState({
-      value: e.target.value;
+      value: e.target.value
     });
   }
 
@@ -63,7 +68,9 @@ export default class card extends Component {
           <option>Sort By Low To High</option>
           <option>Sort By High To Low</option>
         </select>
-        <div className="container6">{this.renderList()}</div>;
+        <div className="container6">
+          {this.state.value ? this.renderList() : null}
+        </div>
       </React.Fragment>
     );
   }
