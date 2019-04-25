@@ -40,8 +40,6 @@ export default class MainContent extends Component {
               <option value="5">$10,000 to $25,000</option>
               <option value="5">$10,000 to $25,000</option>
               <option value="5">$10,000 to $25,000</option>
-              <option value="5">$10,000 to $25,000</option>
-              <option value="5">$10,000 to $25,000</option>
             </select>
           </div>
           <div className="second">
@@ -61,7 +59,12 @@ export default class MainContent extends Component {
             <label for="dateofbirth">Travel Date(mm/dd/yyy)</label>
             <br />
             <div className="container4">
-              <input type="date" name="dateofbirth" id="dateofbirth" />
+              <input
+                type="date"
+                name="dateofbirth"
+                id="dateofbirth"
+                onChange={e => console.log(e.target.value)}
+              />
               <input type="date" name="dateofbirth" id="dateofbirth2" />
             </div>
           </div>
